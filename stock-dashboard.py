@@ -254,7 +254,7 @@ def ticker_banner(symbol: str, price: float, change: float, change_pct: float, c
 
     up    = change >= 0
     arrow = "▲" if up else "▼"
-    color = "#00d4aa" if up else "#ff5f6d"
+    color = "#22c55e" if up else "#ef4444"
     bg    = "rgba(0,212,170,0.08)" if up else "rgba(255,95,109,0.08)"
     sign  = "+" if up else ""
 
