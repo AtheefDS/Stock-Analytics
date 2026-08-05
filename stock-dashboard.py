@@ -261,17 +261,18 @@ def ticker_banner(symbol: str, price: float, change: float, change_pct: float, c
     html = f"""
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
     <div style="
-        background:#111827;
-        border:1px solid #1e2d45;
-        border-top:3px solid {color};
-        border-radius:14px;
-        padding:1.2rem 1.8rem;
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        font-family:'Inter',sans-serif;
-        box-sizing:border-box;
-        width:100%;
+        background: #111827;
+        border: 1px solid #1e2d45;
+        border-top: 3px solid var(--color); /* or use a fixed color like #3b82f6 */
+        border-radius: 14px;
+        padding: 1.2rem 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Inter', sans-serif;
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
     ">
         <div>
             <div style="font-size:11px;font-weight:600;letter-spacing:0.1em;color:#8899b4;text-transform:uppercase;margin-bottom:4px;">
